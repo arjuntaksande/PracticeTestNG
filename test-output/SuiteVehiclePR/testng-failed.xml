@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteVehiclePR]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestVehiclePR(failed)">
+    <classes>
+      <class name="com.arj.Tests.VehiclePrivacyReport">
+        <methods>
+          <include name="verifyVIN"/>
+          <include name="verifyIdentifier"/>
+          <include name="verifyBiometrics"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.arj.Tests.VehiclePrivacyReport -->
+    </classes>
+  </test> <!-- TestVehiclePR(failed) -->
+</suite> <!-- Failed suite [SuiteVehiclePR] -->

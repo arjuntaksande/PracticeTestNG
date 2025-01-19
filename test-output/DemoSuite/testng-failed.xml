@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DemoSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="OrangeHRMLogin(failed)">
+    <classes>
+      <class name="com.arj.Tests.OrangeHRM">
+        <methods>
+          <include name="EnterLoginDetails"/>
+        </methods>
+      </class> <!-- com.arj.Tests.OrangeHRM -->
+    </classes>
+  </test> <!-- OrangeHRMLogin(failed) -->
+  <test thread-count="5" name="OrangeHRMMyInfo(failed)">
+    <classes>
+      <class name="com.arj.Tests.OrangeHRM">
+        <methods>
+          <include name="VerifyMyInfo"/>
+          <include name="NavigateToMyInfo"/>
+          <include name="EnterLoginDetails"/>
+        </methods>
+      </class> <!-- com.arj.Tests.OrangeHRM -->
+    </classes>
+  </test> <!-- OrangeHRMMyInfo(failed) -->
+  <test thread-count="5" name="TestGoogle(failed)">
+    <classes>
+      <class name="com.arj.Tests.FirstTest">
+        <methods>
+          <include name="TestGoogle"/>
+        </methods>
+      </class> <!-- com.arj.Tests.FirstTest -->
+    </classes>
+  </test> <!-- TestGoogle(failed) -->
+</suite> <!-- Failed suite [DemoSuite] -->
