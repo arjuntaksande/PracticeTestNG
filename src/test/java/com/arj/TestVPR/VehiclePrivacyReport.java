@@ -35,6 +35,7 @@ public class VehiclePrivacyReport {
          WebElement actualVIN = driver.findElement(By.xpath("//*[@id=\"js-vin\"]"));
          String getactualVINText = actualVIN.getText();
          assertEquals(getactualVINText, expectedVIN, "VIN is Mismatched");
+         driver.quit();
      }
 
      @Test
