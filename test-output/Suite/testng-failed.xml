@@ -3,14 +3,16 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.arj.Tests.VehiclePrivacyReportTest">
+      <class name="com.arj.TestVPR.VehiclePrivacyReport">
         <methods>
-          <include name="verifyBiometrics"/>
-          <include name="verifyVIN"/>
-          <include name="verifyIdentifier"/>
           <include name="launchBrowser"/>
+          <include name="verifyVIN"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="tearDown"/>
+          <include name="setUpEnvironment"/>
         </methods>
-      </class> <!-- com.arj.Tests.VehiclePrivacyReportTest -->
+      </class> <!-- com.arj.TestVPR.VehiclePrivacyReport -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
